@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify Player</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+</head>
+
+<body>
+
+  <div class="login-container hidden" id="js-login-container">
+    <button class="btn btn--login" id="js-btn-login">Login with Spotify</button>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="now-playing__img">
+        <img class="playing_img" src="${data.item.album.images[0].url}">
+      </div>
+      
+     
+
+      <div class="now-playing__side">
+          <div class="now-playing__name">SONG</div>
+          <div class="now-playing__artist">ARTIST</div>
+          <div class="now-playing__status">STOP</div>
+          <div class="progress">
+            <div class="progress__bar"></div>
+          </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="background" style="background-image:url(${data.item.album.images[0].url})"></div>
+  
+  <script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch'></script>
+  <script src='https://spotify-player.herokuapp.com/spotify-player.js'></script>
+  <script  src="./script.js"></script>
+  
+
+</body>
+
+</html>
