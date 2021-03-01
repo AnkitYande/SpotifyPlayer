@@ -26,7 +26,8 @@ spotifyPlayer.on('update', (response) => {
 /**********************  Handle Login  ********************/
 spotifyPlayer.on('login', user => {
   if (user === null) {
-    loginContainer.style.display = 'flex';
+    loginContainer.style.display = 'block';
+    loginContainer.style.textAlign = 'center';
     container.style.display = 'none';
   } else {
     loginContainer.style.display = 'none';
