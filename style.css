@@ -54,6 +54,8 @@ body {
 
 .now-playing__artist {
   margin-bottom: 1em;
+  font-size: 1.2em;
+  /* font-weight: bold; */
 }
 
 .now-playing__status {
